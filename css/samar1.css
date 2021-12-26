@@ -77,8 +77,8 @@ header nav a {
   color: #262f5a;
   font-weight: bold;
 }
-.button3 {
-  margin-top: 20px;
+. .button3 {
+  margin: 20px;
 }
 .button3 button {
   height: 45px;
@@ -97,6 +97,10 @@ header nav a {
   );
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+.button1 button {
+  height: 60px;
+  border-radius: 30px;
 }
 nav a:hover {
   animation-name: updown;
@@ -711,6 +715,7 @@ b {
   height: 80px;
   transition: 1s;
   border-radius: 10px;
+  position: relative;
 }
 
 .mySwiper1 .swiper-slide img {
@@ -722,8 +727,21 @@ b {
   vertical-align: middle;
   /* object-fit: cover; */
 }
+.mySwiper1 .logo-hover {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  position: absolute;
+  opacity: 0;
+}
 .mySwiper1 .swiper-slide:hover {
   background: linear-gradient(to right, #f55f8d, #f8ae56);
+}
+.mySwiper1 .swiper-slide:hover .logo-hover {
+  opacity: 1;
 }
 /* end carousel swiper info */
 /* start footer */
@@ -787,6 +805,7 @@ b {
   border-radius: 10px 0 0 10px;
   border: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px;
 }
 .join__input input:hover {
   border: 1px solid #f55f8d;
@@ -794,7 +813,7 @@ b {
 .join__input button {
   font-size: 20px;
   width: 18%;
-  height: 60px;
+  height: 62px;
   color: #fff;
   border-radius: 0 10px 10px 0;
   position: absolute;
